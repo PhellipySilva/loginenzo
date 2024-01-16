@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de Login</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div class="login">
+        <h2>Validação de Login Simples</h2>
+        <label for="usuário">Usuário</label>
+        <input type="text" placeholder="usuário" id="user">
+        <br>
+        <label for="senha">Senha</label>
+        <input type="password" placeholder="senha" id="password">
+        <br>
+        <button onclick="loginEnzo()">Conectar</button>
+    </div>
+
+    <script>
+        function loginEnzo() {
+            var username = document.getElementById("user").value;
+            var pass = document.getElementById("password").value;
+
+            if (username === "Enzo" && pass === "admin") {
+                alert("Usuário e senha corretos!")
+            }
+            else {
+                alert("Usuário ou senha incorretos! Tente novamente.")
+            }
+        }
+    </script>
+</body>
+
+</html>
